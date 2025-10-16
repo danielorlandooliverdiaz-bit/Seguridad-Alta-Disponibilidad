@@ -101,3 +101,4 @@ echo "Directorio 'test_environment' y su contenido han sido eliminados."
 echo "================================================="
 echo "      PRUEBA FINALIZADA CON ÉXITO"
 echo "================================================="
+
