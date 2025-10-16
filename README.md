@@ -20,14 +20,26 @@ Esta es una aplicación de línea de comandos que utiliza OpenSSL para realizar 
 ## Instalación
 
 1.  Clone el repositorio o descargue los archivos del proyecto.
-2.  Asegúrese de que el script principal tenga permisos de ejecución:
+2.  Asegúrese de que todos los scripts `.sh` tengan permisos de ejecución:
     ```bash
-    chmod +x main.sh
+    chmod +x main.sh scripts/*.sh
     ```
-3. También dele permisos de ejecución a los scripts dentro de la carpeta `scripts`:
+
+## Pruebas
+
+Para verificar rápidamente que la aplicación funciona correctamente en su sistema, puede utilizar el script de prueba automatizado.
+
+1.  Primero, asegúrese de que el script de prueba tenga permisos de ejecución:
     ```bash
-    chmod +x scripts/*.sh
+    chmod +x run_tests.sh
     ```
+
+2.  Luego, ejecútelo:
+    ```bash
+    ./run_tests.sh
+    ```
+
+Este script simulará los pasos para generar claves, cifrar un archivo de prueba con el método simétrico e híbrido, y luego descifrarlos, verificando que el contenido final sea idéntico al original. Al final, limpiará todos los archivos generados.
 
 ## Uso
 
